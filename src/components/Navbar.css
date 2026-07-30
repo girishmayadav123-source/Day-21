@@ -1,0 +1,119 @@
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:#0d6efd;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:white;
+}
+
+.brand-mark{
+    width:50px;
+    height:50px;
+    background:#fff;
+    color:#0d6efd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.brand-text{
+    display:flex;
+    flex-direction:column;
+}
+
+.brand strong{
+    font-size:22px;
+    letter-spacing:1px;
+}
+
+.brand small{
+    font-size:12px;
+    color:#dfe9ff;
+    letter-spacing:2px;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    transition:0.3s;
+    padding-bottom:4px;
+}
+
+.nav-links a:hover{
+    color:#ffd54f;
+}
+
+.nav-links a.active{
+    color:#ffd54f;
+    border-bottom:2px solid #ffd54f;
+}
+
+/* Phone */
+
+.nav-phone{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    font-size:14px;
+    color:white;
+}
+
+.nav-phone span{
+    font-size:12px;
+    color:#dfe9ff;
+}
+
+.nav-phone strong{
+    font-size:18px;
+    margin-top:3px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .nav-phone{
+        align-items:center;
+    }
+}
